@@ -1,0 +1,41 @@
+{
+  "name": "julianvila",
+  "private": true,
+  "version": "2.0.0",
+  "description": "",
+  "main": "package.json",
+  "author": "Julian Vila <vilaj46@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "sanity start",
+    "test": "sanity check"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "@mui/icons-material": "^5.5.1",
+    "@mui/material": "^5.5.3",
+    "@sanity/base": "^2.23.2",
+    "@sanity/client": "^2.23.2",
+    "@sanity/components": "^2.14.0",
+    "@sanity/core": "^2.23.2",
+    "@sanity/dashboard": "^2.29.3",
+    "@sanity/default-layout": "^2.23.2",
+    "@sanity/default-login": "^2.23.2",
+    "@sanity/desk-tool": "^2.23.2",
+    "@sanity/image-url": "^1.0.1",
+    "babel-plugin-styled-components": "^2.0.6",
+    "prop-types": "^15.8.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-material-ui-carousel": "^3.3.3",
+    "sanity-plugin-vercel-deploy": "^2.1.6",
+    "styled-components": "^5.2.0"
+  },
+  "devDependencies": {}
+}

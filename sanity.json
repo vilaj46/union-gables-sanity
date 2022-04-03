@@ -1,0 +1,25 @@
+{
+  "root": true,
+  "project": {
+    "name": "Union Gables Next Sanity"
+  },
+  "api": {
+    "projectId": "hwbiz02h",
+    "dataset": "production"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/components",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool",
+    "vercel-deploy",
+    "@sanity/dashboard"
+  ],
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema.js"
+    }
+  ]
+}
