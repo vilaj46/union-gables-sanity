@@ -4,7 +4,7 @@ import React from 'react'
 import RedBall from './RedBall'
 import CustomLink from '../../CustomLink'
 
-function RedLink({ linkObj, includeBall }) {
+function RedLink({linkObj, includeBall}) {
   return (
     <CustomLink href={linkObj.href}>
       {linkObj.text} {includeBall && <RedBall />}

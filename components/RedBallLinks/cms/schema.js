@@ -1,5 +1,4 @@
 import RedBallLinksPreview from './RedBallLinksPreview'
-
 export default {
   title: 'Red Ball List',
   name: 'redBallList',
