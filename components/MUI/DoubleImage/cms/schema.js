@@ -1,5 +1,7 @@
 import React from "react";
 
+import Preview from "./Preview";
+
 export default {
   title: "Double Images",
   name: "doubleImages",
@@ -41,9 +43,8 @@ export default {
     },
     prepare(selection) {
       const { images = {} } = selection;
-      console.log(selection);
       return { images };
     },
-    component: () => <span>HEY</span>,
+    component: Preview,
   },
 };

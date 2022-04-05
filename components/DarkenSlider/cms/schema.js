@@ -1,8 +1,6 @@
 import React from 'react'
 
-// import DarkenSlider from '../index.js'
 import DarkSliderPreview from './DarkSliderPreview.js'
-// import urlFor from './urlFor'
 
 export default {
   title: 'Darken Slider',
