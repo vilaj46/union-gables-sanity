@@ -13,6 +13,7 @@ import slideShowSchema from "../components/SlideShow/cms/schema";
 import darkenSliderSchema from "../components/DarkenSlider/cms/schema";
 import redBallLinksSchema from "../components/RedBallLinks/cms/schema";
 import redBallSchema from "../components/RedBallLinks/components/cms/schema";
+import tripAdvisorSchema from "../components/TripAdvisor/cms/schema";
 
 // Mui Schemas
 import carouselSchema from "../components/MUI/Carousel/cms/schema";
@@ -34,6 +35,7 @@ export default {
     redBallLinksSchema,
     redBallSchema,
     darkenSliderSchema,
+    tripAdvisorSchema,
     {
       title: "Block",
       type: "block",
