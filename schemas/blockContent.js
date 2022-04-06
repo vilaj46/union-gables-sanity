@@ -12,7 +12,7 @@ import hrSchema from "../components/HR/cms/schema";
 import slideShowSchema from "../components/SlideShow/cms/schema";
 import darkenSliderSchema from "../components/DarkenSlider/cms/schema";
 import redBallLinksSchema from "../components/RedBallLinks/cms/schema";
-import redBall from "../components/RedBallLinks/components/cms/schema";
+import redBallSchema from "../components/RedBallLinks/components/cms/schema";
 
 // Mui Schemas
 import carouselSchema from "../components/MUI/Carousel/cms/schema";
@@ -32,7 +32,7 @@ export default {
     hrSchema,
     slideShowSchema,
     redBallLinksSchema,
-    redBall,
+    redBallSchema,
     darkenSliderSchema,
     {
       title: "Block",
