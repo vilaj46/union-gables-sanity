@@ -6,6 +6,7 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 
 // Document types
 import page from "./documents/page";
+import room from "./documents/room";
 import header from "./documents/header";
 // import route from './documents/route'
 // import siteConfig from './documents/siteConfig'
@@ -41,6 +42,7 @@ export default createSchema({
     // link,
     // mailchimp,
     page,
+    room,
     header,
     portableText,
     // route,

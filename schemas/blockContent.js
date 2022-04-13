@@ -15,6 +15,7 @@ import redBallLinksSchema from "../components/RedBallLinks/cms/schema";
 import redBallSchema from "../components/RedBallLinks/components/cms/schema";
 import tripAdvisorSchema from "../components/TripAdvisor/cms/schema";
 import youtubeSchema from "../components/Youtube/cms/schema";
+import bookNowButtonSchema from "../components/BookNowButton/cms/schema";
 
 // Mui Schemas
 import carouselSchema from "../components/MUI/Carousel/cms/schema";
@@ -40,6 +41,7 @@ export default {
     darkenSliderSchema,
     tripAdvisorSchema,
     youtubeSchema,
+    bookNowButtonSchema,
     {
       title: "Block",
       type: "block",
