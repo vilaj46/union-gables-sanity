@@ -22,6 +22,7 @@ import carouselSchema from "../components/MUI/Carousel/cms/schema";
 import textCarouselSchema from "../components/MUI/TextCarousel/cms/schema";
 import doubleImagesSchema from "../components/MUI/DoubleImage/cms/schema";
 import sideBySideCarouselScehma from "../components/MUI/SideBySideCarousel/cms/schema";
+import amenitiesSchema from "../components/MUI/Amenities/cms/schema";
 
 export default {
   title: "Block Content",
@@ -33,6 +34,7 @@ export default {
     textCarouselSchema,
     doubleImagesSchema,
     sideBySideCarouselScehma,
+    amenitiesSchema,
     // Regular Schemas
     hrSchema,
     slideShowSchema,
