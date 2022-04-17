@@ -30,7 +30,7 @@ function RedBallLinks({ links = sampleData, randomKey = undefined }) {
   const splitLinks = divideLinksEvenly(links);
   if (links.length > 0) {
     return (
-      <Container>
+      <Container maxWidth="md">
         <LinksContainer>
           {splitLinks.map((split) => {
             return (
@@ -41,7 +41,7 @@ function RedBallLinks({ links = sampleData, randomKey = undefined }) {
       </Container>
     );
   } else {
-    return <Container>Red Balls loading...</Container>;
+    return <Container maxWidth="md">Red Balls loading...</Container>;
   }
 }
 

@@ -24,11 +24,18 @@ import doubleImagesSchema from "../components/MUI/DoubleImage/cms/schema";
 import sideBySideCarouselScehma from "../components/MUI/SideBySideCarousel/cms/schema";
 import amenitiesSchema from "../components/MUI/Amenities/cms/schema";
 
+// New Schemas
+import imagesSchema from "../@core/components/Images/cms/schema";
+import pageTitlesSchema from "../@core/components/PageTitles/cms/schema";
+
 export default {
   title: "Block Content",
   name: "blockContent",
   type: "array",
   of: [
+    // New Schemas
+    pageTitlesSchema,
+    imagesSchema,
     // MUI Schemas
     carouselSchema,
     textCarouselSchema,
@@ -135,6 +142,8 @@ export default {
     // You can add additional types here. Note that you can't use
     // primitive types such as 'string' and 'number' in the same array
     // as a block type.
+    // This image should be it's own component.
+    // Will do that later.
     {
       type: "image",
       fields: [
@@ -142,6 +151,8 @@ export default {
           name: "alt",
           title: "Alt",
           type: "string",
+          description: "What appears if the image is not loaded; good for SEO.",
+          validation: (Rule) => Rule.required(),
         },
       ],
     },
