@@ -1,21 +1,29 @@
 export default {
-  name: 'page',
-  title: 'Page',
-  type: 'document',
+  name: "page",
+  title: "Page",
+  type: "document",
   fields: [
     {
-      name: 'title',
-      title: 'Title',
-      type: 'string'
+      name: "title",
+      title: "Title",
+      type: "string",
     },
     {
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
+      name: "slug",
+      title: "Slug",
+      type: "slug",
       options: {
-        source: 'title',
-        maxLength: 96
-      }
+        source: "title",
+        maxLength: 96,
+      },
+    },
+    {
+      name: "description",
+      title: "Description",
+      type: "string",
+      options: {
+        maxLength: 160,
+      },
     },
     // {
     //   name: "author",
@@ -42,28 +50,28 @@ export default {
     //   of: [{ type: 'reference', to: { type: 'category' } }]
     // },
     {
-      name: 'publishedAt',
-      title: 'Published at',
-      type: 'datetime'
+      name: "publishedAt",
+      title: "Published at",
+      type: "datetime",
     },
     {
-      name: 'body',
-      title: 'Body',
-      type: 'blockContent'
-    }
+      name: "body",
+      title: "Body",
+      type: "blockContent",
+    },
   ],
 
   preview: {
     select: {
-      title: 'title'
+      title: "title",
       // author: 'author.name',
       // media: 'mainImage'
     },
     prepare(selection) {
       // const { author } = selection
       return Object.assign({}, selection, {
-        subtitle: `by Julian Vila`
-      })
-    }
-  }
-}
+        subtitle: `by Julian Vila`,
+      });
+    },
+  },
+};

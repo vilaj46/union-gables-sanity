@@ -1033,7 +1033,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.12.5", "@babel/runtime@^7.13.10", "@babel/runtime@^7.17.2", "@babel/runtime@^7.3.1", "@babel/runtime@^7.4.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.3", "@babel/runtime@^7.8.7":
+"@babel/runtime@^7.13.10", "@babel/runtime@^7.17.2", "@babel/runtime@^7.3.1", "@babel/runtime@^7.4.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.3", "@babel/runtime@^7.8.7":
   version "7.17.8"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.17.8.tgz#3e56e4aff81befa55ac3ac6a0967349fd1c5bca2"
   integrity sha512-dQpEpK0O9o6lj6oPu0gRDbbnk+4LeHlNcBpspf6Olzt3GIX4P1lWF1gS+pHLDFlaJvbR6q7jCfQ08zA4QJBnmA==
@@ -1846,15 +1846,15 @@
   resolved "https://registry.npmjs.org/@sanity/generate-help-url/-/generate-help-url-3.0.0.tgz#60e9cba61b82103ea3761730a53cd9310b98892d"
   integrity sha512-wtMYcV5GIDIhVyF/jjmdwq1GdlK07dRL40XMns73VbrFI7FteRltxv48bhYVZPcLkRXb0SHjpDS/icj9/yzbVA==
 
-"@sanity/icons@^1.0.8", "@sanity/icons@^1.2.6":
-  version "1.2.6"
-  resolved "https://registry.npmjs.org/@sanity/icons/-/icons-1.2.6.tgz#b75f331899f476a37dcfd876501c041a0726eab4"
-  integrity sha512-jQ/HY1X2HTY4RoK41/Nr/lGdtlpbiP0ksfH3hW5e8CcBR+QajCsyJ0CoHJzKUIqyLbMMrJh03woWCixLQ5N7cg==
-
 "@sanity/icons@^1.2.1", "@sanity/icons@^1.2.2":
   version "1.2.2"
   resolved "https://registry.npmjs.org/@sanity/icons/-/icons-1.2.2.tgz#6fe5cb74cf75757aee864ea13c2740329046b615"
   integrity sha512-lhA6f/K5r8ajL8PrrCftJe6ry/6VGSD1JZSwZiEodVZgkuZOZLs1mU8E0LXUXEyj8QRlvKpifv2xRbY7rWimQg==
+
+"@sanity/icons@^1.2.6":
+  version "1.2.6"
+  resolved "https://registry.npmjs.org/@sanity/icons/-/icons-1.2.6.tgz#b75f331899f476a37dcfd876501c041a0726eab4"
+  integrity sha512-jQ/HY1X2HTY4RoK41/Nr/lGdtlpbiP0ksfH3hW5e8CcBR+QajCsyJ0CoHJzKUIqyLbMMrJh03woWCixLQ5N7cg==
 
 "@sanity/image-url@^1.0.1":
   version "1.0.1"
@@ -2645,13 +2645,6 @@ aws4@^1.8.0:
   version "1.11.0"
   resolved "https://registry.npmjs.org/aws4/-/aws4-1.11.0.tgz#d61f46d83b2519250e2784daf5b09479a8b41c59"
   integrity sha512-xh1Rl34h6Fi1DC2WWKfxUTVqRsNnr6LsKz2+hfwDxQJWmrx8+c7ylaqBMcHfl1U1r2dsifOvKX3LQuLNZ+XSvA==
-
-axios@^0.24.0:
-  version "0.24.0"
-  resolved "https://registry.npmjs.org/axios/-/axios-0.24.0.tgz#804e6fa1e4b9c5288501dd9dff56a7a0940d20d6"
-  integrity sha512-Q6cWsys88HoPgAaFAVUb0WpPk0O8iTeisR9IMqy9G8AbO4NlpVknrnQS03zzF9PGAWgO3cgletO3VjV/P7VztA==
-  dependencies:
-    follow-redirects "^1.14.4"
 
 babel-code-frame@^6.26.0:
   version "6.26.0"
@@ -4878,11 +4871,6 @@ focus-lock@^0.10.1:
   dependencies:
     tslib "^2.0.3"
 
-follow-redirects@^1.14.4:
-  version "1.14.9"
-  resolved "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.14.9.tgz#dd4ea157de7bfaf9ea9b3fbd85aa16951f78d8d7"
-  integrity sha512-MQDfihBQYMcyy5dhRDJUHcw7lb2Pv/TuE6xP1vyraLukNDHKbDxDNaOE3NbCAdKQApno+GPRyo1YAp89yCjK4w==
-
 follow-redirects@^1.2.4:
   version "1.14.6"
   resolved "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.14.6.tgz#8cfb281bbc035b3c067d6cd975b0f6ade6e855cd"
@@ -6836,11 +6824,6 @@ nanoid@^3.1.12, nanoid@^3.1.30:
   version "3.1.30"
   resolved "https://registry.npmjs.org/nanoid/-/nanoid-3.1.30.tgz#63f93cc548d2a113dc5dfbc63bfa09e2b9b64362"
   integrity sha512-zJpuPDwOv8D2zq2WRoMe1HsfZthVewpel9CAvTfc/2mBD1uUT/agc5f7GHGWXlYkFvi1mVxe4IjvP2HNrop7nQ==
-
-nanoid@^3.1.20:
-  version "3.3.2"
-  resolved "https://registry.npmjs.org/nanoid/-/nanoid-3.3.2.tgz#c89622fafb4381cd221421c69ec58547a1eec557"
-  integrity sha512-CuHBogktKwpm5g2sRgv83jEy2ijFzBwMoYA60orPDR7ynsLijJDqgsi4RDGj3OJpy3Ieb+LYwiRmIOGyytgITA==
 
 nanomatch@^1.2.9:
   version "1.2.13"
@@ -9073,20 +9056,6 @@ sanity-diff-patch@^1.0.9:
   dependencies:
     diff-match-patch "^1.0.5"
 
-sanity-plugin-vercel-deploy@^2.1.6:
-  version "2.1.6"
-  resolved "https://registry.npmjs.org/sanity-plugin-vercel-deploy/-/sanity-plugin-vercel-deploy-2.1.6.tgz#015bef3eb8eaeed89cacb9a701a207dbbaebb856"
-  integrity sha512-UUBXrEXjTf9CvkviLbxvg4JvHo+Vl9042KhmjPFrqHFpiIPULU3MsmAcb6M1/4GJgUxlUaNX+j7G2md2qguUEA==
-  dependencies:
-    "@babel/runtime" "^7.12.5"
-    "@sanity/icons" "^1.0.8"
-    "@sanity/ui" "^0.36.17"
-    axios "^0.24.0"
-    nanoid "^3.1.20"
-    prop-types "^15.7.2"
-    spacetime "^6.16.0"
-    swr "^1.1.1"
-
 sax@~1.2.4:
   version "1.2.4"
   resolved "https://registry.npmjs.org/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
@@ -9404,11 +9373,6 @@ space-separated-tokens@^1.0.0:
   version "1.1.5"
   resolved "https://registry.npmjs.org/space-separated-tokens/-/space-separated-tokens-1.1.5.tgz#85f32c3d10d9682007e917414ddc5c26d1aa6899"
   integrity sha512-q/JSVd1Lptzhf5bkYm4ob4iWPjx0KiRe3sRFBNrVqbJkFaBm5vbbowy1mymoPNLRa52+oadOhJ+K49wsSeSjTA==
-
-spacetime@^6.16.0:
-  version "6.16.3"
-  resolved "https://registry.npmjs.org/spacetime/-/spacetime-6.16.3.tgz#86d3b05db33421a9ee478b1f2ca025582fc61fcf"
-  integrity sha512-JQEfj3VHT1gU1IMV5NvhgAP8P+2mDFd84ZCiHN//dp6hRKmuW0IizHissy62lO0nilfFjVhnoSaMC7te+Y5f4A==
 
 spdx-correct@^3.0.0:
   version "3.1.1"
@@ -9742,11 +9706,6 @@ svgo@^1.0.0:
     stable "^0.1.8"
     unquote "~1.1.1"
     util.promisify "~1.0.0"
-
-swr@^1.1.1:
-  version "1.2.2"
-  resolved "https://registry.npmjs.org/swr/-/swr-1.2.2.tgz#6cae09928d30593a7980d80f85823e57468fac5d"
-  integrity sha512-ky0BskS/V47GpW8d6RU7CPsr6J8cr7mQD6+do5eky3bM0IyJaoi3vO8UhvrzJaObuTlGhPl2szodeB2dUd76Xw==
 
 symbol-observable@^1.2.0:
   version "1.2.0"

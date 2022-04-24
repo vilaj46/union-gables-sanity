@@ -19,6 +19,14 @@ export default {
       initialValue: "/rooms/",
     },
     {
+      name: "description",
+      title: "Description",
+      type: "string",
+      options: {
+        maxLength: 160,
+      },
+    },
+    {
       name: "body",
       title: "Body",
       type: "blockContent",
