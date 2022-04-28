@@ -8,6 +8,7 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 import page from "./documents/page";
 import room from "./documents/room";
 import header from "./documents/header";
+import footer from "./documents/footer";
 // import route from './documents/route'
 // import siteConfig from './documents/siteConfig'
 
@@ -44,6 +45,7 @@ export default createSchema({
     page,
     room,
     header,
+    footer,
     portableText,
     // route,
     // simplePortableText,

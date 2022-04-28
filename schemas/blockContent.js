@@ -5,7 +5,6 @@ import Center from "../components/Center";
 import Emphasis from "../components/Emphasis";
 import Paragraph from "../components/MUI/Paragraph";
 import CustomLink from "../components/CustomLink";
-import PageTitle from "../components/PageTitle/PageTitle";
 
 // Schemas
 import hrSchema from "../components/HR/cms/schema";
@@ -80,35 +79,6 @@ export default {
             render: Emphasis,
           },
         },
-        {
-          title: "H1",
-          value: "h1",
-          blockEditor: {
-            render: ({ children }) => {
-              return <PageTitle header={1}>{children}</PageTitle>;
-            },
-          },
-        },
-        {
-          title: "H2",
-          value: "h2",
-          blockEditor: {
-            render: ({ children }) => {
-              return <PageTitle header={2}>{children}</PageTitle>;
-            },
-          },
-        },
-        {
-          title: "H3",
-          value: "h3",
-          blockEditor: {
-            render: ({ children }) => {
-              return <PageTitle header={3}>{children}</PageTitle>;
-            },
-          },
-        },
-        { title: "H4", value: "h4" },
-        { title: "Quote", value: "blockquote" },
       ],
       lists: [{ title: "Bullet", value: "bullet" }],
       // Marks let you mark up inline text in the block editor.
@@ -138,23 +108,6 @@ export default {
           },
         ],
       },
-    },
-    // You can add additional types here. Note that you can't use
-    // primitive types such as 'string' and 'number' in the same array
-    // as a block type.
-    // This image should be it's own component.
-    // Will do that later.
-    {
-      type: "image",
-      fields: [
-        {
-          name: "alt",
-          title: "Alt",
-          type: "string",
-          description: "What appears if the image is not loaded; good for SEO.",
-          validation: (Rule) => Rule.required(),
-        },
-      ],
     },
   ],
 };
