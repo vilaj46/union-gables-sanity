@@ -71,11 +71,12 @@ export default {
   ],
   preview: {
     select: {
+      bnb: "bnb",
       slider: "darken_slider",
     },
     prepare(selection) {
-      const { slider } = selection;
-      return { slider };
+      const { bnb, slider } = selection;
+      return { bnb, slider };
     },
     component: Preview,
   },

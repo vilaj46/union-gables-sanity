@@ -1,27 +1,31 @@
 import React from "react";
-import { Container } from "@mui/material";
+
+import { Container } from "../Container";
 
 import { Img, DoubleImg, DoubleImgsContainer } from "./Images.module.js";
 
 export const Images = ({
-  src = "",
   alt = "",
-  height = "",
-  width = "",
   center = false,
+  height = "",
   images = [],
+  margin = 0,
+  src = "",
+  width = "",
 }) => {
   if (src.length > 0 && images.length === 0) {
     return (
-      <Container maxWidth="md">
+      <Container>
         <Img
           src={src}
           alt={alt}
           style={{
-            height: `${height !== "" ? `${height}px` : "null"}`,
-            width: `${width !== "" ? `${width}px` : "null"}`,
+            maxHeight: `${height !== "" ? `${height}px` : "null"}`,
+            maxWidth: `${width !== "" ? `${width}px` : "null"}`,
             marginLeft: center ? "auto" : "",
             marginRight: center ? "auto" : "",
+            marginTop: margin,
+            marginBottom: margin,
             display: "block",
           }}
         />
@@ -29,7 +33,7 @@ export const Images = ({
     );
   } else if (images.length > 0) {
     return (
-      <Container maxWidth="md">
+      <Container>
         <DoubleImgsContainer>
           {images.map(({ src, alt }) => (
             <DoubleImg src={src} alt={alt} />

@@ -1,16 +1,17 @@
 import React from "react";
 
 // Components
-import Center from "../components/Center";
-import Emphasis from "../components/Emphasis";
-import Paragraph from "../components/MUI/Paragraph";
+import { Center } from "../@core/components/Center";
+import { Emphasis } from "../@core/components/Emphasis";
+import { PageParagraph } from "../@core/components/PageParagraph";
 import CustomLink from "../components/CustomLink";
 
 // Schemas
 import hrSchema from "../components/HR/cms/schema";
 import slideShowSchema from "../components/SlideShow/cms/schema";
-import darkenSliderSchema from "../components/DarkenSlider/cms/schema";
-import redBallLinksSchema from "../components/RedBallLinks/cms/schema";
+// import darkenSliderSchema from "../components/DarkenSlider/cms/schema";
+import darkenSliderSchema from "../@platform/components/DarkenSlider/cms/schema";
+// import redBallLinksSchema from "../components/RedBallLinks/cms/schema";
 import redBallSchema from "../components/RedBallLinks/components/cms/schema";
 import tripAdvisorSchema from "../components/TripAdvisor/cms/schema";
 import youtubeSchema from "../components/Youtube/cms/schema";
@@ -24,6 +25,7 @@ import sideBySideCarouselScehma from "../components/MUI/SideBySideCarousel/cms/s
 import amenitiesSchema from "../components/MUI/Amenities/cms/schema";
 
 // New Schemas
+import columnOfLinks from "../@core/components/ColumnsOfLinks/cms/schema";
 import imagesSchema from "../@core/components/Images/cms/schema";
 import pageTitlesSchema from "../@core/components/PageTitles/cms/schema";
 
@@ -44,7 +46,8 @@ export default {
     // Regular Schemas
     hrSchema,
     slideShowSchema,
-    redBallLinksSchema,
+    // redBallLinksSchema,
+    columnOfLinks,
     redBallSchema,
     darkenSliderSchema,
     tripAdvisorSchema,
@@ -62,7 +65,7 @@ export default {
           title: "Normal",
           value: "normal",
           blockEditor: {
-            render: Paragraph,
+            render: PageParagraph,
           },
         },
         {

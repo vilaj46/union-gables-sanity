@@ -28,12 +28,6 @@ export default {
       initialValue: "www.facebook.com/unionGables?",
     },
     {
-      name: "twitter",
-      title: "Twitter",
-      type: "string",
-      initialValue: "www.twitter.com/uniongables?",
-    },
-    {
       name: "instagram",
       title: "Instagram",
       type: "string",

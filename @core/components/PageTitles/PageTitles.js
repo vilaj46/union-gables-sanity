@@ -1,13 +1,22 @@
 import React from "react";
 
-import { H1, H2, H3 } from "./PageTitles.module.js";
+import { Container } from "../Container";
+
 import GlobalStyle from "../../styles/theme.default.js";
 
+import { H1, H2, H3, H4, H5, H6 } from "./PageTitles.module.js";
+
+/**
+ * Add different font sizes for H4-H6.
+ */
+
 export const PageTitles = ({
-  text = "",
   bnb = "Union Gables",
-  header = 1,
   center = true,
+  fullScreen = false,
+  header = 1,
+  margin = 0,
+  text = "",
 }) => {
   const { Theme, Fonts } = GlobalStyle;
 
@@ -20,14 +29,35 @@ export const PageTitles = ({
     PageTitle = H2;
   } else if (header === 3) {
     PageTitle = H3;
+  } else if (header === 4) {
+    PageTitle = H4;
+  } else if (header === 5) {
+    PageTitle = H5;
+  } else if (header === 6) {
+    PageTitle = H6;
   }
 
-  return (
-    <Theme>
-      <Fonts />
-      <PageTitle center={center} unionGables={unionGables}>
-        {text}
-      </PageTitle>
-    </Theme>
-  );
+  if (fullScreen) {
+    return (
+      <>
+        <Theme>
+          <Fonts />
+          <PageTitle center={center} unionGables={unionGables} margin={margin}>
+            {text}
+          </PageTitle>
+        </Theme>
+      </>
+    );
+  } else {
+    return (
+      <Container>
+        <Theme>
+          <Fonts />
+          <PageTitle center={center} unionGables={unionGables} margin={margin}>
+            {text}
+          </PageTitle>
+        </Theme>
+      </Container>
+    );
+  }
 };
